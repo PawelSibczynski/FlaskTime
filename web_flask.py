@@ -12,6 +12,7 @@ def index():
 
 @app.route('/profile/<name>')
 def profile(name):
+    print('User login page')
     return render_template("profile.html", name=name)
 
 
